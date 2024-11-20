@@ -44,12 +44,23 @@ ul{
 }
 li{
     display:flex;
-    background-color: F8F6E9;
+    background-color: #F8F6E9;
     border-radius: 10px;
     text-align: center;
     align-items: center;
     padding: 1em;
 
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:#590209
+}
+li:hover{
+    border-bottom: #590209;
+    border-style: solid;
+    border-bottom-width: 10px;
 }
 li:nth-of-type(5){
     background-color:#590209 ;
