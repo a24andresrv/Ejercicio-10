@@ -31,6 +31,9 @@ header{
     height: auto;
     width: auto;
 }
+.logo{
+    margin-right: 1em;
+}
 .triangulo{
     width: 25px;
     height: 20px;
@@ -73,6 +76,8 @@ li{
 }
 header a{
     text-decoration: none;
+    margin: 0px;
+    font-size: 17px;
 }
 header a{
     color:#590209
@@ -130,23 +135,26 @@ p{
     font-size: 25px;
     width: 90%;
 }
-section article article a{
+a{
     text-decoration: none;
     color: #590209;
     width: 100%;
     font-size: 25px;
+
 }
-section article article{
+.boton{
     border-color: #590209;
     border-style: solid;
     border-radius: 10px;
-    width: 200px;
+    width: auto;
+    padding: 1em;
 }
 /*Primera sección*/
 .comienzo{
     background-color: #F8F6E9;
 }
 .what-we-offer{
+    display: flex;
     flex-direction: column;
     background-color: #F8F6E9;
 }
