@@ -234,3 +234,69 @@ ol li{
     padding: 4px;
     font-size: 20px;
 }
+section:nth-child(7){
+    display: flex;
+    flex-direction: column;
+}
+section:nth-child(7) > article:first-of-type {
+    width: 100%;  
+}
+section:nth-child(7) > article:last-of-type {
+    width: 60%;  
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    padding: 5px;
+}
+#name{
+    width: 100%;
+}
+#email{
+    width: 5%;
+}
+#phone{
+    width: 43%;
+}
+#website{
+    width: 50%;
+}
+#submit{
+    width: 100%;
+}
+
+
+/*Estilods del footer*/
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8F6E9;
+
+}
+footer p{
+    font-size: large;
+}
+footer section{
+    background-color: black;
+    color:#F8F6E9;
+}
+footer .logo-y-nombre {
+    background-color: black;
+    color: white;
+    width: 50px;
+}
+footer .triangulo{
+    background-color: #F8F6E9;
+}
+footer .circulo{
+    background-color: #590209;
+}
