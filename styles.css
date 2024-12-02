@@ -139,6 +139,7 @@ section:nth-of-type(odd){
 }
 section  img{
     width: 50%;
+    opacity: 100%;
 }
 article{
     width: 50%;
@@ -170,6 +171,7 @@ section:nth-child(3){
     flex-direction: column;
 
 }
+
 section:nth-child(3) > article:first-of-type {
     width: 100%;  
 }
@@ -187,16 +189,23 @@ section:nth-child(3) > article article {
     text-align: justify;
 }
 section:nth-child(3) img {
-    width: 40%
+    width: 40%;
+    opacity: 100%;
 }
-section:nth-child(4){
+img{
+    width: 100%;
+    background-color: #F8F6E9;
+    opacity: 70%;
+}
+
+section:nth-child(5){
     display:flex;
     flex-direction: column;
 }
-section:nth-child(4) > article:first-of-type {
+section:nth-child(5) > article:first-of-type {
     width: 100%;  
 }
-section:nth-child(4) > article:last-of-type {
+section:nth-child(5) > article:last-of-type {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -205,34 +214,26 @@ section:nth-child(4) > article:last-of-type {
     font-size: 20px;
     align-items: start;
 }
-section:nth-child(4) > article article {
+section:nth-child(5) > article article {
     width: 30%;
     text-align: justify;
 }
-section:nth-child(4) img {
-    width: 40%
+section:nth-child(5) img {
+    width: 40%;
+    opacity: 100%;
 }
-img{
-    width: 100%;
-    background-color: #F8F6E9;
-}
+
 section:nth-child(5){
     background-color: none ;
 }
 ol{
     width: auto; 
 }
-ol li::marker {
-    background-color: #590209;
-    color: #fff; 
-    font-weight: bold;
-    border-radius: 50%; 
-    padding: 5px 10px;
-    width: 20px;
-}
 ol li{
     padding: 4px;
     font-size: 20px;
+    list-style-type: decimal;
+    display: list-item;
 }
 section:nth-child(7){
     display: flex;
@@ -242,32 +243,88 @@ section:nth-child(7) > article:first-of-type {
     width: 100%;  
 }
 section:nth-child(7) > article:last-of-type {
-    width: 60%;  
+    width: 100%;  
 }
 form{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 input{
-    padding: 5px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #590209;
+    border-radius: 5px;
+    margin-top:2% ;
+    color: #590209;
+    border-width: 3px;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+::placeholder{
+    color: #590209;
+    opacity: 50%;
 }
 #name{
     width: 100%;
 }
 #email{
-    width: 5%;
+    width: 46%;
 }
 #phone{
-    width: 43%;
+    width: 46%;
 }
 #website{
-    width: 50%;
+    width: 46%;
+}
+#profession {
+    width: 46%;
+}
+#skills{
+    width: 100%;
+    height: 100px;
+    border-style: solid;
+    border-color: #590209;
+    border-radius: 5px;
+    margin-top:2% ;
+    color: #590209;
+    border-width: 3px;
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+#find-us{
+    width: 100%;
+}
+#agree {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-top: 2%;
+}
+
+label{
+    text-align: center;
+    display: flex;
+    align-self: center;
+    justify-self: flex-start;
+    font-family: "Open Sans";
+    font-size: 18px;
 }
 #submit{
     width: 100%;
+    background-color: #590209;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+#submit:hover{
+    width: 100%;
+    background-color:#FEEACD;
+    color:#590209;
+    border-radius: 20px;
+    margin-bottom: 2%;
 }
 
 
@@ -284,6 +341,7 @@ footer{
 }
 footer p{
     font-size: large;
+    width: auto;
 }
 footer section{
     background-color: black;
@@ -292,7 +350,7 @@ footer section{
 footer .logo-y-nombre {
     background-color: black;
     color: white;
-    width: 50px;
+    width: auto;
 }
 footer .triangulo{
     background-color: #F8F6E9;
